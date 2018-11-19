@@ -1,5 +1,5 @@
 body{
-  background-color:#6a989e;
+  background-color:#0d7481;
   font-family: Helvetica;
 }
 
@@ -41,7 +41,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eeeeee;
+  background-color: #922525;
   overflow: hidden;
 }
 
