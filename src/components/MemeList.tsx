@@ -17,6 +17,7 @@ export default class MemeList extends React.Component<IProps, {}> {
 			<div className="container meme-list-wrapper">
                 <div className="row meme-list-heading">
                     <div className="input-group">
+                        
                         <input type="text" id="search-tag-textbox" className="form-control" placeholder="Search By Tags" />
                         <div className="input-group-append">
                             <div className="btn btn-outline-secondary search-button" onClick = {this.searchByTag}>Search</div>
