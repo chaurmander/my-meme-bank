@@ -41,10 +41,10 @@ class App extends React.Component<{}, IState> {
 			</div>
 			<div className="container">
 				<div className="row">
-					<div className="col-7">
+					<div className="col-5">
 						<MemeDetail currentMeme={this.state.currentMeme} />
 					</div>
-					<div className="col-5">
+					<div className="col-7">
 						<MemeList memes={this.state.memes} selectNewMeme={this.selectNewMeme} searchByTag={this.fetchMemes}/>
 					</div>
 				</div>
@@ -92,7 +92,7 @@ class App extends React.Component<{}, IState> {
 		})
 	}
 	private fetchMemes(tag: any) {
-		let url = "http://phase2apitest.azurewebsites.net/api/meme"
+		let url = "https://msaphase22018memeapirc.azurewebsites.net/api/meme"
 		if (tag !== "") {
 			url += "/tag?=" + tag
 		}
@@ -127,7 +127,7 @@ class App extends React.Component<{}, IState> {
 	
 		const title = titleInput.value
 		const tag = tagInput.value
-		const url = "http://phase2apitest.azurewebsites.net/api/meme/upload"
+		const url = "https://msaphase22018memeapirc.azurewebsites.net/api/meme/upload"
 	
 		const formData = new FormData()
 		formData.append("Title", title)
